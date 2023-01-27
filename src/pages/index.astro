@@ -1,0 +1,84 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Romain Blary's personnal website">
+	<main>
+		<section>
+			<svg
+				id="Calque_1"
+				data-name="Calque 1"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 0 457.85 335.53"
+				><defs
+					><style>
+						.cls-1 {
+							fill: none;
+							stroke-linecap: round;
+							stroke-linejoin: round;
+							stroke-width: 40px;
+							stroke: url(#Dégradé_sans_nom);
+						}
+					</style><linearGradient
+						id="Dégradé_sans_nom"
+						x1="30"
+						y1="170.23"
+						x2="487.85"
+						y2="170.23"
+						gradientTransform="matrix(1, 0, 0, -1, -30, 337.99)"
+						gradientUnits="userSpaceOnUse"
+						><stop offset="0.2" stop-color="#fc983b"></stop><stop offset="0.8" stop-color="#41baa3"></stop></linearGradient
+					></defs
+				><polyline
+					class="cls-1"
+					points="20 20 216.2 20 167.58 119.52 69.38 119.52 216.77 315.53 328.45 167.83 314.77 118.77 364.16 118.77 437.85 20 290.65 20 216.77 167.77"
+				></polyline></svg
+			>
+			<h1>Romain Blary</h1>
+			<h2><span class="text-gradient">Web Developper</span></h2>
+			<p>The website is being redesigned and rebuilt with Astro. <br />It will be available soon...</p>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	section {
+		color: white;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	h1 {
+		font-size: 3rem;
+		margin: 0;
+		font-weight: normal;
+		font-family: "Monoton", sans-serif;
+		text-align: center;
+	}
+	svg {
+		width: 6rem;
+		height: 6rem;
+	}
+	.text-gradient {
+		background: var(--accent-gradient);
+		-webkit-background-clip: text;
+		background-clip: text !important;
+		-moz-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-moz-text-fill-color: transparent;
+		display: inline-block;
+	}
+</style>
